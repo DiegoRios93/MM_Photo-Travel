@@ -1,0 +1,520 @@
+@charset "UTF-8";
+/*General, a esta sección la gregaremos junto al header*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1; }
+
+body {
+  font-family: "Raleway", sans-serif; }
+
+/*Ahora si comenzamos con el heaeder*/
+.displayFlex {
+  display: flex;
+  align-items: center; }
+  .displayFlex img {
+    width: 95px;
+    margin-right: 10px; }
+    @media only screen and (max-width: 767px) {
+      .displayFlex img {
+        width: 55px; } }
+  .displayFlex div h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em; }
+    @media only screen and (max-width: 767px) {
+      .displayFlex div h1 {
+        font-size: 1.25em; } }
+  .displayFlex div p {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    font-size: 0.9em; }
+    @media only screen and (max-width: 767px) {
+      .displayFlex div p {
+        font-size: 0.75em; } }
+
+.flexEnd {
+  justify-content: flex-end; }
+  .flexEnd ul a {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    padding: 0; }
+
+/*Section Zero en el inicio*/
+.sectionZero {
+  background-image: url("../images/pano3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: calc(100vh - 120px);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black; }
+  .sectionZero .centerContenido {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px; }
+    .sectionZero .centerContenido img {
+      width: 150px;
+      border-radius: 50%;
+      border: 2px solid black;
+      transition: transform 0.5s; }
+    .sectionZero .centerContenido img:hover {
+      transform: scale(1.1); }
+    .sectionZero .centerContenido p {
+      background-color: rgba(255, 255, 255, 0.5);
+      font-weight: bold;
+      font-style: italic;
+      font-size: 18px;
+      border-radius: 20px;
+      margin-top: 10px;
+      color: black; }
+      @media only screen and (max-width: 767px) {
+        .sectionZero .centerContenido p {
+          font-size: 16px; } }
+    .sectionZero .centerContenido a {
+      display: inline-block;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 16px;
+      background-color: black;
+      border: 2px solid #83FC18;
+      margin-top: 40px;
+      padding: 10px; }
+      @media only screen and (max-width: 767px) {
+        .sectionZero .centerContenido a {
+          margin-top: 15px;
+          padding: 5px; } }
+    @media only screen and (max-width: 767px) {
+      .sectionZero .centerContenido {
+        width: 85%; } }
+
+/*Section One en el inicio*/
+.sectionOne .widthTotal {
+  width: 95%;
+  margin: auto; }
+
+.sectionOne .margenSup {
+  margin-top: 30px;
+  align-items: center; }
+
+.sectionOne .sectionOne__text p {
+  text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.2; }
+
+.sectionOne .sectionOne__img img {
+  width: 100%;
+  border-radius: 15px; }
+
+@media only screen and (max-width: 767px) {
+  .sectionOne .sectionOne__img img {
+    width: 100%; } }
+
+.sectionOne .sectionOne__imgLeft img {
+  width: 100%;
+  border-radius: 15px;
+  margin-right: 20px; }
+
+@media only screen and (max-width: 767px) {
+  .sectionOne .sectionOne__imgLeft img {
+    width: 100%; } }
+
+@media only screen and (max-width: 767px) {
+  .sectionOne .flexOrder {
+    display: flex; }
+    .sectionOne .flexOrder .orderMinusOne {
+      order: -1; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .sectionOne .flexOrder {
+    display: flex; }
+    .sectionOne .flexOrder .orderMinusOne {
+      order: -1; } }
+
+/*Footer*/
+.footer {
+  margin-top: 20px;
+  background: linear-gradient(to right, #7BC6CC, #BE93C5); }
+  .footer h5 {
+    padding: 25px 0 0 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center; }
+    .footer h5 img {
+      width: 30px; }
+    @media only screen and (max-width: 767px) {
+      .footer h5 {
+        font-size: 10px; }
+        .footer h5 img {
+          width: 25px; } }
+  .footer .borderBottom {
+    border-bottom: 2px solid #8B008B; }
+  .footer ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    justify-content: flex-end; }
+    .footer ul li {
+      margin: 0 4px; }
+    @media only screen and (max-width: 767px) {
+      .footer ul {
+        justify-content: space-evenly; } }
+
+/*Página Viajes*/
+.flexViajesPortada {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 45px 0; }
+  @media only screen and (max-width: 767px) {
+    .flexViajesPortada .hiddenViajes {
+      display: none; } }
+
+.backColorViajes {
+  background: linear-gradient(to left, #7BC6CC, #BE93C5);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black; }
+
+.margenSupViajes {
+  margin-top: 30px;
+  align-items: center; }
+  .margenSupViajes img {
+    width: 100%;
+    border-radius: 15px; }
+  .margenSupViajes h3 {
+    font-size: 2em; }
+  .margenSupViajes p {
+    font-size: 1.1em;
+    line-height: 1.2;
+    text-align: justify; }
+
+.widthTotalViajes {
+  width: 95%;
+  margin: auto; }
+
+@media only screen and (max-width: 767px) {
+  .orderViajes {
+    order: -1; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .orderViajes {
+    order: -1; } }
+
+/*Galería de imágenes*/
+.portadaGaleria {
+  background: linear-gradient(to left, #7BC6CC, #BE93C5);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black; }
+  .portadaGaleria .widthPortadaGaleria {
+    width: 90%;
+    margin: auto;
+    padding: 25px 0; }
+    .portadaGaleria .widthPortadaGaleria .flexPortGaleria {
+      display: flex; }
+      .portadaGaleria .widthPortadaGaleria .flexPortGaleria img {
+        width: 40%;
+        transition: all 0.5s; }
+      .portadaGaleria .widthPortadaGaleria .flexPortGaleria img:hover {
+        transform: rotate(-45deg); }
+      .portadaGaleria .widthPortadaGaleria .flexPortGaleria .portadaGaleriaTitle, .portadaGaleria .widthPortadaGaleria .flexPortGaleria p, .portadaGaleria .widthPortadaGaleria .flexPortGaleria p span {
+        text-transform: uppercase;
+        color: black;
+        font-weight: bold;
+        font-size: 50px; }
+      .portadaGaleria .widthPortadaGaleria .flexPortGaleria p {
+        font-size: 32px;
+        line-height: 1.5; }
+        .portadaGaleria .widthPortadaGaleria .flexPortGaleria p span {
+          font-size: 60px;
+          color: #8B008B;
+          display: inline-block; }
+        .portadaGaleria .widthPortadaGaleria .flexPortGaleria p a {
+          text-decoration: none; }
+    @media only screen and (max-width: 767px) {
+      .portadaGaleria .widthPortadaGaleria .flexPortGaleria img {
+        display: none; }
+      .portadaGaleria .widthPortadaGaleria .flexPortGaleria .portadaGaleriaTitle, .portadaGaleria .widthPortadaGaleria .flexPortGaleria p, .portadaGaleria .widthPortadaGaleria .flexPortGaleria p span {
+        font-size: 30px; }
+      .portadaGaleria .widthPortadaGaleria .flexPortGaleria p {
+        font-size: 22px; }
+        .portadaGaleria .widthPortadaGaleria .flexPortGaleria p span {
+          font-size: 40px; } }
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+      .portadaGaleria .widthPortadaGaleria .flexPortGaleria .portadaGaleriaTitle, .portadaGaleria .widthPortadaGaleria .flexPortGaleria p, .portadaGaleria .widthPortadaGaleria .flexPortGaleria p span {
+        font-size: 30px; }
+      .portadaGaleria .widthPortadaGaleria .flexPortGaleria p {
+        font-size: 22px; }
+        .portadaGaleria .widthPortadaGaleria .flexPortGaleria p span {
+          font-size: 40px; } }
+
+.galeriaFotos h2 {
+  text-align: center;
+  margin-top: 15px; }
+
+.galeriaFotos img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px;
+  transition: all 0.5s; }
+
+.galeriaFotos img:hover {
+  transform: scale(1.05);
+  filter: brightness(60%); }
+
+/*Sobre mi sección*/
+.portadaYMA {
+  background: linear-gradient(to left, #7BC6CC, #BE93C5);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black; }
+  .portadaYMA .row {
+    width: 95%;
+    margin: auto;
+    align-items: center;
+    padding: 36px 0; }
+    .portadaYMA .row img {
+      width: 100%;
+      border-radius: 10px;
+      transition: all 0.5s; }
+    .portadaYMA .row img:hover {
+      transform: scale(1.06);
+      filter: sepia(50%); }
+    .portadaYMA .row p {
+      font-size: 32px;
+      text-transform: uppercase;
+      line-height: 1.5; }
+      .portadaYMA .row p a {
+        font-size: 58px;
+        text-decoration: none;
+        color: #8B008B;
+        display: inline-block; }
+      .portadaYMA .row p span {
+        font-size: 45px;
+        font-weight: bold; }
+    @media only screen and (max-width: 767px) {
+      .portadaYMA .row img {
+        display: none; }
+      .portadaYMA .row p {
+        font-size: 20px; }
+        .portadaYMA .row p a {
+          font-size: 40px; }
+        .portadaYMA .row p span {
+          font-size: 35px; } }
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+      .portadaYMA .row img {
+        display: none; } }
+
+.sobreMi {
+  padding-top: 15px;
+  width: 95%;
+  margin: auto;
+  align-items: center; }
+  .sobreMi .sobreMiMartin {
+    width: 100%;
+    border-radius: 15px;
+    margin: 15px 0; }
+  .sobreMi .sobreMiText {
+    text-align: justify;
+    padding: 20px 25px 20px 0; }
+    .sobreMi .sobreMiText p {
+      font-size: 1.3em;
+      line-height: 1.2; }
+  .sobreMi .aside {
+    border-left: 1px solid #8B008B;
+    padding: 20px 0 20px 40px; }
+    .sobreMi .aside ul {
+      list-style: none; }
+      .sobreMi .aside ul li {
+        text-align: justify;
+        border-bottom: 1px solid grey;
+        padding: 10px 0; }
+        .sobreMi .aside ul li img {
+          float: left;
+          margin-right: 5px; }
+        .sobreMi .aside ul li a {
+          text-decoration: none;
+          color: black; }
+          .sobreMi .aside ul li a span {
+            text-decoration: underline;
+            text-transform: uppercase; }
+          .sobreMi .aside ul li a p {
+            font-size: 15px; }
+  @media only screen and (max-width: 767px) {
+    .sobreMi {
+      width: 100%; }
+      .sobreMi .orderSobreMi {
+        order: -1; }
+      .sobreMi .sobreMiText {
+        padding: 0; }
+      .sobreMi .aside {
+        border: none;
+        padding: 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .sobreMi {
+      width: 100%; }
+      .sobreMi .orderSobreMi {
+        order: -1; }
+      .sobreMi .sobreMiText {
+        padding: 0; }
+      .sobreMi .aside {
+        border: none;
+        padding: 0; } }
+
+/*Contacto sección*/
+.contact {
+  background: linear-gradient(to left, #7BC6CC, #BE93C5);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black; }
+
+.portadaContacto {
+  padding: 30px 0;
+  width: 86%;
+  margin: auto;
+  align-items: center; }
+  .portadaContacto img {
+    width: 100%;
+    border-radius: 15px;
+    transition: all 0.5s; }
+  .portadaContacto img:hover {
+    transform: scale(1.06);
+    filter: sepia(50%); }
+  .portadaContacto p {
+    line-height: 1.3;
+    font-size: 30px;
+    text-transform: uppercase; }
+    .portadaContacto p a {
+      text-decoration: none;
+      color: #8B008B; }
+  .portadaContacto span {
+    font-size: 50px;
+    font-weight: bold; }
+  @media only screen and (max-width: 767px) {
+    .portadaContacto img {
+      display: none; }
+    .portadaContacto p {
+      font-size: 20px; }
+    .portadaContacto span {
+      font-size: 35px; } }
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .portadaContacto img {
+      display: none; } }
+
+/*Formulario y tarjeta de contacto*/
+.formularioYDT {
+  width: 95%;
+  margin: auto;
+  padding: 25px 0;
+  justify-content: center; }
+  .formularioYDT .formContact {
+    width: 90%; }
+    .formularioYDT .formContact form {
+      width: 70%;
+      margin: auto;
+      padding: 20px;
+      box-shadow: 0 0 8px 0 black;
+      border-radius: 10px; }
+      .formularioYDT .formContact form h2 {
+        text-align: center;
+        padding-top: 20px; }
+      .formularioYDT .formContact form .grupo {
+        margin: 30px;
+        position: relative; }
+      .formularioYDT .formContact form input {
+        background: none;
+        font-size: 15px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        border: none;
+        width: 100%;
+        border-bottom: 2px solid whitesmoke; }
+        .formularioYDT .formContact form input:focus {
+          outline: none;
+          color: black; }
+        .formularioYDT .formContact form input:focus ~ label {
+          top: -14px;
+          font-size: 12px;
+          color: #1E90FF; }
+        .formularioYDT .formContact form input:valid ~ label {
+          top: -14px;
+          font-size: 12px;
+          color: #1E90FF; }
+      .formularioYDT .formContact form label {
+        color: darkgrey;
+        font-size: 16px;
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        transition: all 0.4s ease-in-out;
+        pointer-events: none; }
+      .formularioYDT .formContact form .barra {
+        position: relative;
+        display: block;
+        width: 100%; }
+        .formularioYDT .formContact form .barra::before {
+          content: "";
+          height: 2px;
+          width: 0%;
+          position: absolute;
+          bottom: 0;
+          background: linear-gradient(to right, #89fffd, #ef32d9);
+          transition: width 0.5s ease;
+          left: 0; }
+      .formularioYDT .formContact form input:focus ~ .barra::before {
+        width: 100%; }
+      .formularioYDT .formContact form textarea {
+        font-family: 'Raleway', sans-serif;
+        width: 100%;
+        height: 100px;
+        margin: auto;
+        font-size: 16px;
+        margin: 0 auto;
+        resize: none;
+        border: 1px solid whitesmoke;
+        padding: 5px;
+        background-color: transparent; }
+      .formularioYDT .formContact form button {
+        background: linear-gradient(to right, #7BC6CC, #BE93C5);
+        border: none;
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        color: black;
+        height: 40px;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold; }
+  .formularioYDT .asideContact {
+    width: 80%;
+    margin: auto; }
+    .formularioYDT .asideContact div {
+      width: 100%;
+      height: 50%;
+      padding: 20px 0 20px 50px;
+      background: linear-gradient(to right, #7BC6CC, #BE93C5);
+      border-radius: 15px; }
+    .formularioYDT .asideContact ul {
+      list-style: none; }
+      .formularioYDT .asideContact ul a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.3em;
+        line-height: 1.7; }
+  @media only screen and (max-width: 767px) {
+    .formularioYDT .formContact {
+      width: 100%; }
+      .formularioYDT .formContact form {
+        width: 100%; }
+    .formularioYDT .asideContact {
+      width: 100%;
+      margin-top: 20px; } }
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .formularioYDT .asideContact {
+      margin-top: 20px; } }

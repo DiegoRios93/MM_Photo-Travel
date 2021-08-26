@@ -1,0 +1,61 @@
+/*General, a esta sección la gregaremos junto al header*/ 
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 1;
+}
+
+body{
+	font-family: $fontMain;
+}
+
+/*Ahora si comenzamos con el heaeder*/
+
+.displayFlex{
+	display: flex;
+	align-items: center;
+	img{
+		width: 95px;
+		margin-right: 10px;
+		@media only screen and (max-width: 767px){
+			width: 55px;
+		}
+	}
+	div{
+		h1{
+			margin: 0;
+			padding: 0;
+			font-size: $fontH1;
+			@media only screen and (max-width: 767px){
+				font-size: $fontH1/1.2;
+			}
+		}
+		p{
+			margin: 0;
+			padding: 0;
+			background-color: black;
+			color: white;
+			display: inline-block;
+			font-size: $fontPTitle;
+			@media only screen and (max-width: 767px){
+				font-size: $fontPTitle/1.2;
+			}
+		}
+	}
+}
+
+.flexEnd{
+	justify-content: flex-end;
+	ul{
+		a{
+			text-transform: uppercase;
+			font-weight: bold;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+

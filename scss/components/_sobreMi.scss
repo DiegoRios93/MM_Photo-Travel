@@ -1,0 +1,131 @@
+/*Sobre mi sección*/
+
+.portadaYMA{
+	background: linear-gradient(to left, $backColorOne, $backColorTwo);
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	.row{
+		width: 95%;
+		margin: auto;
+		align-items: center;
+		padding: 36px 0;
+		img{
+			width: 100%;
+			border-radius: 10px;
+			transition: all 0.5s;
+		}
+		img:hover{
+			transform: scale(1.06);
+			filter: sepia(50%);
+		}
+		p{
+			font-size: 32px;
+			text-transform: uppercase;
+			line-height: 1.5;
+			a{
+				font-size: 58px;
+				text-decoration: none;
+				color: $colorFooterYMas;
+				display: inline-block;
+			}
+			span{
+				font-size: 45px;
+				font-weight: bold;
+			}
+		}
+		@media only screen and (max-width: 767px){
+			img{
+				display: none;
+			}
+			p{
+				font-size: 20px;
+				a{
+					font-size: 40px;
+				}
+				span{
+					font-size: 35px;
+				}
+			}
+		}
+		@media only screen and (min-width: 768px) and (max-width: 992px){
+			img{
+				display: none;
+			}
+		}
+	}
+}
+
+.sobreMi{
+	padding-top: 15px;
+	width: 95%;
+	margin: auto;
+	align-items: center;
+	.sobreMiMartin{
+		width: 100%;
+		border-radius: 15px;
+		margin: 15px 0;
+	}
+	.sobreMiText{
+		text-align: justify;
+		padding: 20px 25px 20px 0;
+		p{
+			font-size: $fontText+0.2;
+			line-height: 1.2;
+		}
+	}
+	.aside{
+		border-left: 1px solid $colorFooterYMas;
+		padding: 20px 0 20px 40px;
+		ul{
+			list-style: none;
+			li{
+				text-align: justify;
+				border-bottom: 1px solid grey;
+				padding: 10px 0;
+				img{
+					float: left;
+					margin-right: 5px;
+				}
+				a{
+					text-decoration: none;
+					color: black;
+					span{
+						text-decoration: underline;
+						text-transform: uppercase;
+					}
+					p{
+						font-size: 15px;
+					}
+				}
+			}	
+		}
+	}
+	@media only screen and (max-width: 767px){
+		.orderSobreMi{
+			order: -1;
+		}
+		width: 100%;
+		.sobreMiText{
+			padding: 0;
+		}
+		.aside{
+			border: none;
+			padding: 0;
+		}
+	}
+	@media only screen and (min-width: 768px) and (max-width: 992px){
+		.orderSobreMi{
+			order: -1;
+		}
+		width: 100%;
+		.sobreMiText{
+			padding: 0;
+		}
+		.aside{
+			border: none;
+			padding: 0;
+		}
+	}
+}
+
+

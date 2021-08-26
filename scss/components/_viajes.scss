@@ -1,0 +1,52 @@
+/*Página Viajes*/
+
+.flexViajesPortada{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 45px 0;
+	@media only screen and (max-width: 767px){
+		.hiddenViajes{
+			display: none;
+		}
+	}
+}
+
+.backColorViajes{
+	background: linear-gradient(to left, $backColorOne, $backColorTwo);
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.margenSupViajes{
+	margin-top: 30px;
+	align-items: center;
+	img{
+		width: 100%;
+		border-radius: 15px;
+	}
+	h3{
+		font-size: $fontH3;
+	}
+	p{
+		font-size: $fontText;
+		line-height: 1.2;
+		text-align: justify;
+	}
+}
+
+.widthTotalViajes{
+	width: 95%;
+	margin: auto;
+}
+
+@media only screen and (max-width: 767px){
+	.orderViajes{
+		order: -1;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px){
+	.orderViajes{
+		order: -1;
+	}
+}

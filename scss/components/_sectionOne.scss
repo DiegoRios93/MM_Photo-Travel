@@ -1,0 +1,58 @@
+/*Section One en el inicio*/
+
+.sectionOne{
+	.widthTotal{
+		width: 95%;
+		margin: auto;
+	}
+	.margenSup{
+		margin-top: 30px;
+		align-items: center;
+	}
+	.sectionOne__text{
+		p{
+			text-align: justify;
+			font-size: $fontText;
+			line-height: 1.2;
+		}
+	}
+	.sectionOne__img{
+		img{
+			width: 100%;
+			border-radius: 15px;
+		}
+		@media only screen and (max-width: 767px){
+			img{
+				width: 100%;
+			}
+		}
+
+	}
+	.sectionOne__imgLeft{
+		img{
+			width: 100%;
+			border-radius: 15px;
+			margin-right: 20px;
+		}
+		@media only screen and (max-width: 767px){
+			img{
+				width: 100%;
+			}
+		}
+	
+	}	
+	.flexOrder{
+		@media only screen and (max-width: 767px){
+			display: flex;
+			.orderMinusOne{
+				order: -1;
+			}
+		}
+		@media only screen and (min-width: 768px) and (max-width: 992px){
+			display: flex;
+			.orderMinusOne{
+				order: -1;
+			}
+		}
+	}
+}
