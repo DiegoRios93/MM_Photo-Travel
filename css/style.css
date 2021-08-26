@@ -86,7 +86,8 @@ body {
       background-color: black;
       border: 2px solid #83FC18;
       margin-top: 40px;
-      padding: 10px; }
+      padding: 10px;
+      margin-bottom: 10px; }
       @media only screen and (max-width: 767px) {
         .sectionZero .centerContenido a {
           margin-top: 15px;
@@ -94,6 +95,12 @@ body {
     @media only screen and (max-width: 767px) {
       .sectionZero .centerContenido {
         width: 85%; } }
+  @media only screen and (max-width: 767px) {
+    .sectionZero {
+      height: 100%; } }
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .sectionZero {
+      height: 100%; } }
 
 /*Section One en el inicio*/
 .sectionOne .widthTotal {
