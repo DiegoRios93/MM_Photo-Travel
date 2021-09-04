@@ -9,6 +9,11 @@
 			display: none;
 		}
 	}
+	@media only screen and (min-width: 768px) and (max-width: 992px){
+		.hiddenViajesMD{
+			display: none;
+		}
+	}
 }
 
 .backColorViajes{
