@@ -67,6 +67,7 @@ body {
     .sectionZero .centerContenido img:hover {
       transform: scale(1.1); }
     .sectionZero .centerContenido p {
+      padding: 5px;
       background-color: rgba(255, 255, 255, 0.5);
       font-weight: bold;
       font-style: italic;
@@ -87,27 +88,34 @@ body {
       border: 2px solid #83FC18;
       margin-top: 40px;
       padding: 10px;
-      margin-bottom: 10px; }
+      margin-bottom: 50px; }
       @media only screen and (max-width: 767px) {
         .sectionZero .centerContenido a {
           margin-top: 15px;
           padding: 5px; } }
     @media only screen and (max-width: 767px) {
       .sectionZero .centerContenido {
-        width: 85%; } }
+        width: 85%;
+        padding-top: 50px; } }
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+      .sectionZero .centerContenido {
+        width: 50%;
+        padding-top: 50px; } }
   @media only screen and (max-width: 767px) {
     .sectionZero {
       height: 100%;
+      background: linear-gradient(to left, #7BC6CC, #BE93C5);
+      border-top: 2px solid black;
+      border-bottom: 2px solid black; } }
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .sectionZero {
+      height: 100%;
       background-image: url("../images/pano3.jpg");
-      width: 100%;
       background-size: cover;
       background-attachment: fixed;
       background-repeat: no-repeat;
       border-top: 2px solid black;
       border-bottom: 2px solid black; } }
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .sectionZero {
-      height: 100%; } }
 
 /*Section One en el inicio*/
 .sectionOne .widthTotal {
