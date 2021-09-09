@@ -36,6 +36,9 @@
 		font-size: $fontText;
 		line-height: 1.2;
 		text-align: justify;
+		span{
+			font-weight: bold;
+		}
 	}
 }
 

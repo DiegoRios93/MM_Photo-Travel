@@ -1,6 +1,10 @@
 /*Section One en el inicio*/
 
 .sectionOne{
+	span{
+		font-weight: bold;
+		line-height: 1.8;
+	}
 	.widthTotal{
 		width: 95%;
 		margin: auto;
@@ -13,7 +17,7 @@
 		p{
 			text-align: justify;
 			font-size: $fontText;
-			line-height: 1.2;
+			line-height: 1.5;
 		}
 	}
 	.sectionOne__img{

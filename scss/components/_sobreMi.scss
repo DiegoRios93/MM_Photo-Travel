@@ -64,13 +64,21 @@
 		width: 100%;
 		border-radius: 15px;
 		margin: 15px 0;
+		transition: all 1s;
+		&:hover{
+			transform: scale(1.05);
+			filter: hue-rotate(90deg);
+		}
 	}
 	.sobreMiText{
 		text-align: justify;
 		padding: 20px 25px 20px 0;
 		p{
-			font-size: $fontText+0.2;
+			font-size: $fontText+0.1;
 			line-height: 1.2;
+			span{
+				font-weight: bold;
+			}
 		}
 	}
 	.aside{

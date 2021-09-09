@@ -25,7 +25,7 @@ body {
     font-size: 1.5em; }
     @media only screen and (max-width: 767px) {
       .displayFlex div h1 {
-        font-size: 1.25em; } }
+        font-size: 0.9375em; } }
   .displayFlex div p {
     margin: 0;
     padding: 0;
@@ -45,13 +45,21 @@ body {
     margin: 0;
     padding: 0; }
 
+@media only screen and (max-width: 767px) {
+  .nav-item {
+    padding: 7px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .nav-item {
+    padding: 7px; } }
+
 /*Section Zero en el inicio*/
 .sectionZero {
   background-image: url("../images/pano3.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height: calc(100vh - 120px);
+  height: 100%;
   border-top: 2px solid black;
   border-bottom: 2px solid black; }
   .sectionZero .centerContenido {
@@ -88,7 +96,7 @@ body {
       border: 2px solid #83FC18;
       margin-top: 40px;
       padding: 10px;
-      margin-bottom: 50px; }
+      margin-bottom: 70px; }
       @media only screen and (max-width: 767px) {
         .sectionZero .centerContenido a {
           margin-top: 15px;
@@ -110,7 +118,7 @@ body {
   @media only screen and (min-width: 768px) and (max-width: 992px) {
     .sectionZero {
       height: 100%;
-      background-image: url("../images/panoramicaTablet.jpg");
+      background-image: url("../images/fondoTablet.jpg");
       background-size: cover;
       background-attachment: fixed;
       background-repeat: no-repeat;
@@ -118,6 +126,10 @@ body {
       border-bottom: 2px solid black; } }
 
 /*Section One en el inicio*/
+.sectionOne span {
+  font-weight: bold;
+  line-height: 1.8; }
+
 .sectionOne .widthTotal {
   width: 95%;
   margin: auto; }
@@ -129,7 +141,7 @@ body {
 .sectionOne .sectionOne__text p {
   text-align: justify;
   font-size: 1.1em;
-  line-height: 1.2; }
+  line-height: 1.5; }
 
 .sectionOne .sectionOne__img img {
   width: 100%;
@@ -219,6 +231,8 @@ body {
     font-size: 1.1em;
     line-height: 1.2;
     text-align: justify; }
+    .margenSupViajes p span {
+      font-weight: bold; }
 
 .widthTotalViajes {
   width: 95%;
@@ -343,13 +357,19 @@ body {
   .sobreMi .sobreMiMartin {
     width: 100%;
     border-radius: 15px;
-    margin: 15px 0; }
+    margin: 15px 0;
+    transition: all 1s; }
+    .sobreMi .sobreMiMartin:hover {
+      transform: scale(1.05);
+      filter: hue-rotate(90deg); }
   .sobreMi .sobreMiText {
     text-align: justify;
     padding: 20px 25px 20px 0; }
     .sobreMi .sobreMiText p {
-      font-size: 1.3em;
+      font-size: 1.2em;
       line-height: 1.2; }
+      .sobreMi .sobreMiText p span {
+        font-weight: bold; }
   .sobreMi .aside {
     border-left: 1px solid #8B008B;
     padding: 20px 0 20px 40px; }
