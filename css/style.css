@@ -190,7 +190,7 @@ body {
         .footer h5 img {
           width: 25px; } }
   .footer .borderBottom {
-    border-bottom: 2px solid #8B008B; }
+    border-bottom: 2px solid #B57EDC; }
   .footer ul {
     display: flex;
     list-style: none;
@@ -272,7 +272,7 @@ body {
         line-height: 1.5; }
         .portadaGaleria .widthPortadaGaleria .flexPortGaleria p span {
           font-size: 60px;
-          color: #8B008B;
+          color: #B57EDC;
           display: inline-block; }
         .portadaGaleria .widthPortadaGaleria .flexPortGaleria p a {
           text-decoration: none; }
@@ -331,7 +331,7 @@ body {
       .portadaYMA .row p a {
         font-size: 58px;
         text-decoration: none;
-        color: #8B008B;
+        color: #B57EDC;
         display: inline-block; }
       .portadaYMA .row p span {
         font-size: 45px;
@@ -371,7 +371,7 @@ body {
       .sobreMi .sobreMiText p span {
         font-weight: bold; }
   .sobreMi .aside {
-    border-left: 1px solid #8B008B;
+    border-left: 1px solid #B57EDC;
     padding: 20px 0 20px 40px; }
     .sobreMi .aside ul {
       list-style: none; }
@@ -435,7 +435,7 @@ body {
     text-transform: uppercase; }
     .portadaContacto p a {
       text-decoration: none;
-      color: #8B008B; }
+      color: #B57EDC; }
   .portadaContacto span {
     font-size: 50px;
     font-weight: bold; }
